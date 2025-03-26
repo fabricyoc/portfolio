@@ -1,6 +1,3 @@
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Container from "../../components/Container";
 import styles from './Contatos.module.css';
 
 // Ícones utilizando https://react-icons.github.io/react-icons/
@@ -12,61 +9,55 @@ import { FiGithub } from "react-icons/fi";
 
 function Contatos() {
   return (
-    <>
-      <Header />
-      <Container>
-        <section className={styles.contatos}>
-          <h2>Contatos</h2>
-          <h3>Entre em contato</h3>
-          <p>
-            Para que possamos conversar mais sobre.
-          </p>
-          <div className={styles.icones}>
+    <section className={styles.contatos}>
+      <h2>Contatos</h2>
+      <h3>Entre em contato</h3>
+      <p>
+        Para que possamos conversar mais sobre.
+      </p>
+      <div className={styles.icones}>
 
-            <a
-              href="mailto:proffabricyo@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <GoMail className={styles.icone} />
-            </a>
+        <a
+          href="mailto:proffabricyo@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GoMail className={styles.icone} />
+        </a>
 
-            <a
-              href="https://instagram.com/fabricyoc"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram className={styles.icone} />
-            </a>
+        <a
+          href="https://instagram.com/fabricyoc"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram className={styles.icone} />
+        </a>
 
-            <a
-              href="https://www.youtube.com/@nonacamada"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <CiYoutube className={styles.icone} />
-            </a>
+        <a
+          href="https://www.youtube.com/@nonacamada"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <CiYoutube className={styles.icone} />
+        </a>
 
-            <a
-              href="https://github.com/fabricyoc"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FiGithub className={styles.icone} />
-            </a>
+        <a
+          href="https://github.com/fabricyoc"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FiGithub className={styles.icone} />
+        </a>
 
-            <a
-              href="https://www.linkedin.com/in/fabricyoc/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <CiLinkedin className={styles.icone} />
-            </a>
-          </div>
-        </section>
-      </Container>
-      <Footer />
-    </>
+        <a
+          href="https://www.linkedin.com/in/fabricyoc/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <CiLinkedin className={styles.icone} />
+        </a>
+      </div>
+    </section>
   );
 };
 
