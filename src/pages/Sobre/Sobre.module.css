@@ -1,0 +1,68 @@
+.sobre {
+  width: 100%;
+  min-height: 85vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.5rem;
+}
+
+.avatar {
+  width: 250px;
+  height: 250px;
+
+  border-radius: 100%;
+
+  box-shadow: 0 0 10px var(--secondary);
+
+  transition: 0.5s;
+}
+
+.avatar:hover {
+  box-shadow: 0 0 20px var(--secondary);
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.bio span {
+  color: var(--red);
+  font-weight: bold;
+}
+
+.bio strong {
+  color: var(--secondary);
+  font-weight: bold;
+
+}
+
+.textos h2,
+p {
+  margin-bottom: 1rem;
+}
+
+.techs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+}
+
+.icones {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.icone {
+  font-size: 4rem;
+  color: var(--primary);
+}
+
