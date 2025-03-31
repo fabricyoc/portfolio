@@ -23,8 +23,8 @@
     color: var(--white);
 
     padding-right: 1.5rem;
-    /* 18 px */
     font-size: 1.125;
+    transition: color 0.5s;
 }
 
 .header a:hover {
