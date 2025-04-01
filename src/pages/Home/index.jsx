@@ -18,7 +18,7 @@ function Home() {
 				</Link>
 			</div>
 			<figure>
-				<img className='img-home' src='/developer-red.svg' alt='Imagem de home' />
+				<img className={styles.imgHome} src='/developer-red.svg' alt='Imagem de home' />
 			</figure>
 		</section>
 	);

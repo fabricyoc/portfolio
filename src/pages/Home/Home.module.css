@@ -4,12 +4,13 @@
   margin-block: auto;
 
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .home img {
-  height: 500px;
+  width: 500px;
 }
 
 .home p {
@@ -44,4 +45,23 @@
 
 .btn_red:hover {
   background-color: var(--primary);
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+  .home{
+    flex-direction: column;
+  }
+  .home figure{
+    width: 100%;
+    text-align: center;
+  }
+  .imgHome {
+    padding-top: 2rem;
+    max-width: 80%;
+  }
+  .apresentacao{
+    text-align: center;
+  }
+
 }
