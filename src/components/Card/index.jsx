@@ -2,7 +2,6 @@ import styles from './Card.module.css';
 import { BsFiletypeHtml, BsFiletypeCss, BsFiletypeJs, BsFiletypePhp } from "react-icons/bs";
 import { FaReact } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
-import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { IoIosHelpCircleOutline } from 'react-icons/io';
 
@@ -58,9 +57,9 @@ function Card({ titulo, descricao, url, url_linguagens }) {
             )
           }
         </div>
-        <Link to={url} className={styles.cardBotao} target='_blank'>
+        <a href={url} className={styles.cardBotao} target='_blank' rel='noopener noreferrer'>
           <FaArrowRight />
-        </Link>
+        </a>
       </div>
     </section>
   );

@@ -9,7 +9,7 @@ function Projetos() {
   useEffect(() => {
 
     const buscarRepositorios = async () => {
-      const resposta = await fetch('https://api.github.com/users/fabricyoc/repos');
+      const resposta = await fetch('https://api.github.com/users/fabricyoc/repos?page=1&per_page=50');
       const dados = await resposta.json();
       setRepositorios(dados);
     }
